@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21D39F291CC7A05D0062A754 /* Cycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D39F281CC7A05D0062A754 /* Cycle.swift */; };
+		21D39F2B1CC7A33B0062A754 /* Training.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D39F2A1CC7A33B0062A754 /* Training.swift */; };
+		21FE18C41CC7983100D2F934 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FE18C31CC7983100D2F934 /* AppDelegate.swift */; };
+		21FE18C61CC7983100D2F934 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FE18C51CC7983100D2F934 /* ViewController.swift */; };
+		21FE18C91CC7983100D2F934 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21FE18C71CC7983100D2F934 /* Main.storyboard */; };
+		21FE18CC1CC7983100D2F934 /* HIIT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 21FE18CA1CC7983100D2F934 /* HIIT.xcdatamodeld */; };
+		21FE18CE1CC7983100D2F934 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21FE18CD1CC7983100D2F934 /* Assets.xcassets */; };
+		21FE18D11CC7983100D2F934 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21FE18CF1CC7983100D2F934 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		21D39F281CC7A05D0062A754 /* Cycle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cycle.swift; sourceTree = "<group>"; };
+		21D39F2A1CC7A33B0062A754 /* Training.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Training.swift; sourceTree = "<group>"; };
+		21FE18C01CC7983100D2F934 /* HIIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HIIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		21FE18C31CC7983100D2F934 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		21FE18C51CC7983100D2F934 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		21FE18C81CC7983100D2F934 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		21FE18CB1CC7983100D2F934 /* HIIT.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HIIT.xcdatamodel; sourceTree = "<group>"; };
+		21FE18CD1CC7983100D2F934 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21FE18D01CC7983100D2F934 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		21FE18D21CC7983100D2F934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21FE18BD1CC7983100D2F934 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21FE18B71CC7983100D2F934 = {
+			isa = PBXGroup;
+			children = (
+				21FE18C21CC7983100D2F934 /* HIIT */,
+				21FE18C11CC7983100D2F934 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		21FE18C11CC7983100D2F934 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21FE18C01CC7983100D2F934 /* HIIT.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21FE18C21CC7983100D2F934 /* HIIT */ = {
+			isa = PBXGroup;
+			children = (
+				21FE18C31CC7983100D2F934 /* AppDelegate.swift */,
+				21FE18C51CC7983100D2F934 /* ViewController.swift */,
+				21FE18C71CC7983100D2F934 /* Main.storyboard */,
+				21D39F281CC7A05D0062A754 /* Cycle.swift */,
+				21D39F2A1CC7A33B0062A754 /* Training.swift */,
+				21FE18CD1CC7983100D2F934 /* Assets.xcassets */,
+				21FE18CF1CC7983100D2F934 /* LaunchScreen.storyboard */,
+				21FE18D21CC7983100D2F934 /* Info.plist */,
+				21FE18CA1CC7983100D2F934 /* HIIT.xcdatamodeld */,
+			);
+			path = HIIT;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21FE18BF1CC7983100D2F934 /* HIIT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21FE18D51CC7983100D2F934 /* Build configuration list for PBXNativeTarget "HIIT" */;
+			buildPhases = (
+				21FE18BC1CC7983100D2F934 /* Sources */,
+				21FE18BD1CC7983100D2F934 /* Frameworks */,
+				21FE18BE1CC7983100D2F934 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HIIT;
+			productName = HIIT;
+			productReference = 21FE18C01CC7983100D2F934 /* HIIT.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21FE18B81CC7983100D2F934 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Dmitry Roytman";
+				TargetAttributes = {
+					21FE18BF1CC7983100D2F934 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 21FE18BB1CC7983100D2F934 /* Build configuration list for PBXProject "HIIT" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 21FE18B71CC7983100D2F934;
+			productRefGroup = 21FE18C11CC7983100D2F934 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21FE18BF1CC7983100D2F934 /* HIIT */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21FE18BE1CC7983100D2F934 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21FE18D11CC7983100D2F934 /* LaunchScreen.storyboard in Resources */,
+				21FE18CE1CC7983100D2F934 /* Assets.xcassets in Resources */,
+				21FE18C91CC7983100D2F934 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21FE18BC1CC7983100D2F934 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21FE18CC1CC7983100D2F934 /* HIIT.xcdatamodeld in Sources */,
+				21FE18C61CC7983100D2F934 /* ViewController.swift in Sources */,
+				21D39F291CC7A05D0062A754 /* Cycle.swift in Sources */,
+				21FE18C41CC7983100D2F934 /* AppDelegate.swift in Sources */,
+				21D39F2B1CC7A33B0062A754 /* Training.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		21FE18C71CC7983100D2F934 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21FE18C81CC7983100D2F934 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		21FE18CF1CC7983100D2F934 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21FE18D01CC7983100D2F934 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		21FE18D31CC7983100D2F934 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		21FE18D41CC7983100D2F934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		21FE18D61CC7983100D2F934 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HIIT/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.geans.ios.HIIT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		21FE18D71CC7983100D2F934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HIIT/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.geans.ios.HIIT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21FE18BB1CC7983100D2F934 /* Build configuration list for PBXProject "HIIT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21FE18D31CC7983100D2F934 /* Debug */,
+				21FE18D41CC7983100D2F934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21FE18D51CC7983100D2F934 /* Build configuration list for PBXNativeTarget "HIIT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21FE18D61CC7983100D2F934 /* Debug */,
+				21FE18D71CC7983100D2F934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		21FE18CA1CC7983100D2F934 /* HIIT.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				21FE18CB1CC7983100D2F934 /* HIIT.xcdatamodel */,
+			);
+			currentVersion = 21FE18CB1CC7983100D2F934 /* HIIT.xcdatamodel */;
+			path = HIIT.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 21FE18B81CC7983100D2F934 /* Project object */;
+}
