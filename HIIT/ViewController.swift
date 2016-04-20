@@ -26,11 +26,7 @@ class ViewController: UIViewController {
     // MARK: - IBAction's
     @IBAction func action(sender: AnyObject) {
         isStarted = !isStarted
-        if isStarted {
-            training.start()
-        } else {
-            training.stop()
-        }
+        isStarted ? training.start() : training.stop()
         actionButton.setTitle(isStarted ? "Pause" : "Continue", forState: .Normal)
     }
     
@@ -71,19 +67,18 @@ extension ViewController {
             actionIndicator.backgroundColor = relaxColor
         }
     }
-    
     private func reset() {
         training = Training()
         training.onTimerFire = { [unowned self] in
             self.updateLabels()
             self.updateActivityIndicator()
         }
-        timerTitle.text = String(format: "%.02dm:%.02ds.%.03dms", 0, 0, 0)
+        timerTitle.text = ""
         actionTitle.text = "To begin training please tap to \"Start\" button"
         actionButton.setTitle("Start", forState: .Normal)
         actionIndicatorHeight.constant = 0
         view.backgroundColor = actionColor
-        cyclesLabel.text = String(format: "Cycles: %d of %d", (training.phase.cyclesQuantity-training.cycles.count+1),training.phase.cyclesQuantity)
+        cyclesLabel.text = ""
     }
 }
 
