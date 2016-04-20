@@ -12,9 +12,15 @@ class Training {
     private(set) var duration: Int = 0
     private(set) var cycles: [Cycle] = []
     private var timer: NSTimer!
-    private var phase: Phase
+    private(set) var phase: Phase
     var isFinished: Bool { return cycles.isEmpty }
-    var inActivePhase: Bool { return (getFirstCycle()?.actionTime > 0) ?? false }
+    var inActivePhase: Bool = true {
+        willSet {
+            if newValue != inActivePhase {
+                SpeechManager.shared.speech(newValue ? "Action" : "Relax")
+            }
+        }
+    }
     var onTimerFire: (()->())!
     init(phase: Phase = .First) {
         self.phase = phase
@@ -36,14 +42,13 @@ class Training {
             cycle.actionTime > 0 ? (cycle.actionTime -= 1) : (cycle.relaxTime -= 1)
         }
         duration += 1
+        inActivePhase = cycle.actionTime > 0
     }
     private func refresh() {
         for _ in 0..<phase.cyclesQuantity {
             cycles.append(phase.cycleFabric)
         }
-        var lastCycle = phase.cycleFabric
-        lastCycle.relaxTime = 0
-        cycles.append(lastCycle)
+        cycles[cycles.count-1].relaxTime = 0
     }
     
     func getFirstCycle() -> Cycle? {
@@ -61,9 +66,9 @@ extension Training {
         case First, Second, Third, Fourth
         var cyclesQuantity: Int {
             switch self {
-            case .First, .Second: return 11
-            case .Third: return 18
-            case .Fourth: return 25
+            case .First, .Second: return 12
+            case .Third: return 19
+            case .Fourth: return 26
             }
         }
         

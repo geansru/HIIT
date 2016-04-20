@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		21D39F291CC7A05D0062A754 /* Cycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D39F281CC7A05D0062A754 /* Cycle.swift */; };
 		21D39F2B1CC7A33B0062A754 /* Training.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D39F2A1CC7A33B0062A754 /* Training.swift */; };
+		21D45ED21CC7F69000D7B1F2 /* SpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D45ED11CC7F69000D7B1F2 /* SpeechManager.swift */; };
 		21FE18C41CC7983100D2F934 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FE18C31CC7983100D2F934 /* AppDelegate.swift */; };
 		21FE18C61CC7983100D2F934 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FE18C51CC7983100D2F934 /* ViewController.swift */; };
 		21FE18C91CC7983100D2F934 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21FE18C71CC7983100D2F934 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		21D39F281CC7A05D0062A754 /* Cycle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cycle.swift; sourceTree = "<group>"; };
 		21D39F2A1CC7A33B0062A754 /* Training.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Training.swift; sourceTree = "<group>"; };
+		21D45ED11CC7F69000D7B1F2 /* SpeechManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechManager.swift; sourceTree = "<group>"; };
 		21FE18C01CC7983100D2F934 /* HIIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HIIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21FE18C31CC7983100D2F934 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21FE18C51CC7983100D2F934 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			children = (
 				21FE18C31CC7983100D2F934 /* AppDelegate.swift */,
 				21FE18C51CC7983100D2F934 /* ViewController.swift */,
+				21D45ED11CC7F69000D7B1F2 /* SpeechManager.swift */,
 				21FE18C71CC7983100D2F934 /* Main.storyboard */,
 				21D39F281CC7A05D0062A754 /* Cycle.swift */,
 				21D39F2A1CC7A33B0062A754 /* Training.swift */,
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21FE18CC1CC7983100D2F934 /* HIIT.xcdatamodeld in Sources */,
+				21D45ED21CC7F69000D7B1F2 /* SpeechManager.swift in Sources */,
 				21FE18C61CC7983100D2F934 /* ViewController.swift in Sources */,
 				21D39F291CC7A05D0062A754 /* Cycle.swift in Sources */,
 				21FE18C41CC7983100D2F934 /* AppDelegate.swift in Sources */,
