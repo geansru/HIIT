@@ -35,6 +35,21 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         reset()
     }
+    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
+        switch motion {
+        case .MotionShake:
+            if isStarted { action(actionButton) }
+            let alert = UIAlertController(title: "Reset?", message: "Do you really want to reset current state?", preferredStyle: .Alert)
+            let reset = UIAlertAction(title: "Reset", style: .Destructive, handler: {
+                [unowned self] _ in
+                self.reset()
+            })
+            alert.addAction(reset)
+            alert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+        default: break
+        }
+    }
 }
 
 // MARK: Helper's thats update view relating on current cycle state
