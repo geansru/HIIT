@@ -35,19 +35,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         reset()
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        if !isStarted { reset() }
+    }
     override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
-        switch motion {
-        case .MotionShake:
-            if isStarted { action(actionButton) }
-            let alert = UIAlertController(title: "Reset?", message: "Do you really want to reset current state?", preferredStyle: .Alert)
-            let reset = UIAlertAction(title: "Reset", style: .Destructive, handler: {
-                [unowned self] _ in
-                self.reset()
-            })
-            alert.addAction(reset)
-            alert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
-            self.presentViewController(alert, animated: true, completion: nil)
-        default: break
+        if motion == .MotionShake && PreferencesManager.shared.isShakeGestureAllow {
+            resetAction()
         }
     }
 }
@@ -82,13 +77,25 @@ extension ViewController {
             actionIndicator.backgroundColor = relaxColor
         }
     }
+    func resetAction() {
+        if isStarted { action(actionButton) }
+        let alert = UIAlertController(title: "Reset?", message: "Do you really want to reset current state?", preferredStyle: .Alert)
+        let reset = UIAlertAction(title: "Reset", style: .Destructive, handler: {
+            [unowned self] _ in
+            self.reset()
+            })
+        alert.addAction(reset)
+        alert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
+    
     private func reset() {
-        training = Training()
+        training = Training(phase: PreferencesManager.shared.choosenPhase)
         training.onTimerFire = { [unowned self] in
             self.updateLabels()
             self.updateActivityIndicator()
         }
-        timerTitle.text = ""
+        timerTitle.text = "HIIT PHASE \(PreferencesManager.shared.choosenPhase.name)"
         actionTitle.text = "To begin training please tap to \"Start\" button"
         actionButton.setTitle("Start", forState: .Normal)
         actionIndicatorHeight.constant = 0

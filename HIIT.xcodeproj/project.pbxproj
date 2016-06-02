@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		217D81A81D003181002F496D /* PreferencesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217D81A71D003181002F496D /* PreferencesTableViewController.swift */; };
 		21D39F291CC7A05D0062A754 /* Cycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D39F281CC7A05D0062A754 /* Cycle.swift */; };
 		21D39F2B1CC7A33B0062A754 /* Training.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D39F2A1CC7A33B0062A754 /* Training.swift */; };
 		21D45ED21CC7F69000D7B1F2 /* SpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D45ED11CC7F69000D7B1F2 /* SpeechManager.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		217D81A71D003181002F496D /* PreferencesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesTableViewController.swift; sourceTree = "<group>"; };
 		21D39F281CC7A05D0062A754 /* Cycle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cycle.swift; sourceTree = "<group>"; };
 		21D39F2A1CC7A33B0062A754 /* Training.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Training.swift; sourceTree = "<group>"; };
 		21D45ED11CC7F69000D7B1F2 /* SpeechManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechManager.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			children = (
 				21FE18C31CC7983100D2F934 /* AppDelegate.swift */,
 				21FE18C51CC7983100D2F934 /* ViewController.swift */,
+				217D81A71D003181002F496D /* PreferencesTableViewController.swift */,
 				21D45ED11CC7F69000D7B1F2 /* SpeechManager.swift */,
 				21FE18C71CC7983100D2F934 /* Main.storyboard */,
 				21D39F281CC7A05D0062A754 /* Cycle.swift */,
@@ -151,6 +154,7 @@
 				21FE18CC1CC7983100D2F934 /* HIIT.xcdatamodeld in Sources */,
 				21D45ED21CC7F69000D7B1F2 /* SpeechManager.swift in Sources */,
 				21FE18C61CC7983100D2F934 /* ViewController.swift in Sources */,
+				217D81A81D003181002F496D /* PreferencesTableViewController.swift in Sources */,
 				21D39F291CC7A05D0062A754 /* Cycle.swift in Sources */,
 				21FE18C41CC7983100D2F934 /* AppDelegate.swift in Sources */,
 				21D39F2B1CC7A33B0062A754 /* Training.swift in Sources */,

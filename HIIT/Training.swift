@@ -48,6 +48,7 @@ class Training {
         for _ in 0..<phase.cyclesQuantity {
             cycles.append(phase.cycleFabric)
         }
+        if cycles.isEmpty { return }
         cycles[cycles.count-1].relaxTime = 0
     }
     
@@ -58,27 +59,5 @@ class Training {
             return getFirstCycle()
         }
         return cycles[0]
-    }
-}
-
-extension Training {
-    enum Phase  {
-        case First, Second, Third, Fourth
-        var cyclesQuantity: Int {
-            switch self {
-            case .First, .Second: return 12
-            case .Third: return 19
-            case .Fourth: return 26
-            }
-        }
-        
-        var cycleFabric: Cycle {
-            switch self {
-            case .First: return FirstPhaseCycle()
-            case .Second: return SecondPhaseCycle()
-            case .Third: return ThirdPhaseCycle()
-            case .Fourth: return FourthPhaseCycle()
-            }
-        }
     }
 }
