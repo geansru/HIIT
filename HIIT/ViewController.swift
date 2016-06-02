@@ -38,7 +38,7 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        if !isStarted { reset() }
+        if !isStarted && actionButton.titleForState(.Normal) != "Continue" { reset() }
     }
     override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
         if motion == .MotionShake && PreferencesManager.shared.isShakeGestureAllow {
